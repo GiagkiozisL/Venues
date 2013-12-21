@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		450A9FEF1865D3EB008DBED4 /* DTMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450A9FEE1865D3EB008DBED4 /* DTMenuViewController.m */; };
+		450A9FF11865DCEA008DBED4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450A9FF01865DCEA008DBED4 /* QuartzCore.framework */; };
+		450A9FF71865DF8D008DBED4 /* DTSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450A9FF61865DF8D008DBED4 /* DTSideMenuViewController.m */; };
+		450A9FF91865E0BB008DBED4 /* ios_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 450A9FF81865E0BB008DBED4 /* ios_logo.png */; };
+		450A9FFB1865E18D008DBED4 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 450A9FFA1865E18D008DBED4 /* libz.1.1.3.dylib */; };
+		450A9FFD1865E1BE008DBED4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450A9FFC1865E1BE008DBED4 /* SystemConfiguration.framework */; };
 		45A11CD0186515C00059CA05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A11CCF186515C00059CA05 /* Foundation.framework */; };
 		45A11CD2186515C00059CA05 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A11CD1186515C00059CA05 /* CoreGraphics.framework */; };
 		45A11CD4186515C00059CA05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A11CD3186515C00059CA05 /* UIKit.framework */; };
@@ -15,7 +21,7 @@
 		45A11CE0186515C00059CA05 /* DTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A11CDF186515C00059CA05 /* DTAppDelegate.m */; };
 		45A11CE3186515C00059CA05 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A11CE1186515C00059CA05 /* Main_iPhone.storyboard */; };
 		45A11CE6186515C00059CA05 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A11CE4186515C00059CA05 /* Main_iPad.storyboard */; };
-		45A11CE9186515C00059CA05 /* DTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A11CE8186515C00059CA05 /* DTViewController.m */; };
+		45A11CE9186515C00059CA05 /* DTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A11CE8186515C00059CA05 /* DTMainViewController.m */; };
 		45A11CEB186515C00059CA05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45A11CEA186515C00059CA05 /* Images.xcassets */; };
 		45A11CF2186515C10059CA05 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A11CF1186515C10059CA05 /* XCTest.framework */; };
 		45A11CF3186515C10059CA05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A11CCF186515C00059CA05 /* Foundation.framework */; };
@@ -35,6 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		450A9FED1865D3EB008DBED4 /* DTMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMenuViewController.h; sourceTree = "<group>"; };
+		450A9FEE1865D3EB008DBED4 /* DTMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMenuViewController.m; sourceTree = "<group>"; };
+		450A9FF01865DCEA008DBED4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		450A9FF51865DF8D008DBED4 /* DTSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTSideMenuViewController.h; sourceTree = "<group>"; };
+		450A9FF61865DF8D008DBED4 /* DTSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTSideMenuViewController.m; sourceTree = "<group>"; };
+		450A9FF81865E0BB008DBED4 /* ios_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios_logo.png; sourceTree = "<group>"; };
+		450A9FFA1865E18D008DBED4 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		450A9FFC1865E1BE008DBED4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		450A9FFE1865E1CC008DBED4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		45A11CCC186515C00059CA05 /* Venues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Venues.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A11CCF186515C00059CA05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		45A11CD1186515C00059CA05 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,8 +62,8 @@
 		45A11CDF186515C00059CA05 /* DTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTAppDelegate.m; sourceTree = "<group>"; };
 		45A11CE2186515C00059CA05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		45A11CE5186515C00059CA05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		45A11CE7186515C00059CA05 /* DTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTViewController.h; sourceTree = "<group>"; };
-		45A11CE8186515C00059CA05 /* DTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTViewController.m; sourceTree = "<group>"; };
+		45A11CE7186515C00059CA05 /* DTMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTMainViewController.h; sourceTree = "<group>"; };
+		45A11CE8186515C00059CA05 /* DTMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTMainViewController.m; sourceTree = "<group>"; };
 		45A11CEA186515C00059CA05 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		45A11CF0186515C10059CA05 /* VenuesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VenuesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A11CF1186515C10059CA05 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -62,6 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				450A9FFD1865E1BE008DBED4 /* SystemConfiguration.framework in Frameworks */,
+				450A9FFB1865E18D008DBED4 /* libz.1.1.3.dylib in Frameworks */,
+				450A9FF11865DCEA008DBED4 /* QuartzCore.framework in Frameworks */,
 				45A11CD2186515C00059CA05 /* CoreGraphics.framework in Frameworks */,
 				45A11CD4186515C00059CA05 /* UIKit.framework in Frameworks */,
 				45A11CD0186515C00059CA05 /* Foundation.framework in Frameworks */,
@@ -103,6 +121,10 @@
 		45A11CCE186515C00059CA05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				450A9FFE1865E1CC008DBED4 /* CFNetwork.framework */,
+				450A9FFC1865E1BE008DBED4 /* SystemConfiguration.framework */,
+				450A9FFA1865E18D008DBED4 /* libz.1.1.3.dylib */,
+				450A9FF01865DCEA008DBED4 /* QuartzCore.framework */,
 				45A11CCF186515C00059CA05 /* Foundation.framework */,
 				45A11CD1186515C00059CA05 /* CoreGraphics.framework */,
 				45A11CD3186515C00059CA05 /* UIKit.framework */,
@@ -114,14 +136,19 @@
 		45A11CD5186515C00059CA05 /* Venues */ = {
 			isa = PBXGroup;
 			children = (
+				450A9FF81865E0BB008DBED4 /* ios_logo.png */,
 				45A11CDE186515C00059CA05 /* DTAppDelegate.h */,
 				45A11CDF186515C00059CA05 /* DTAppDelegate.m */,
 				45A11CE1186515C00059CA05 /* Main_iPhone.storyboard */,
 				45A11CE4186515C00059CA05 /* Main_iPad.storyboard */,
-				45A11CE7186515C00059CA05 /* DTViewController.h */,
-				45A11CE8186515C00059CA05 /* DTViewController.m */,
 				45A11CEA186515C00059CA05 /* Images.xcassets */,
 				45A11CD6186515C00059CA05 /* Supporting Files */,
+				450A9FED1865D3EB008DBED4 /* DTMenuViewController.h */,
+				450A9FEE1865D3EB008DBED4 /* DTMenuViewController.m */,
+				450A9FF51865DF8D008DBED4 /* DTSideMenuViewController.h */,
+				450A9FF61865DF8D008DBED4 /* DTSideMenuViewController.m */,
+				45A11CE7186515C00059CA05 /* DTMainViewController.h */,
+				45A11CE8186515C00059CA05 /* DTMainViewController.m */,
 			);
 			path = Venues;
 			sourceTree = "<group>";
@@ -236,6 +263,7 @@
 				45A11CEB186515C00059CA05 /* Images.xcassets in Resources */,
 				45A11CE3186515C00059CA05 /* Main_iPhone.storyboard in Resources */,
 				45A11CDA186515C00059CA05 /* InfoPlist.strings in Resources */,
+				450A9FF91865E0BB008DBED4 /* ios_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				450A9FF71865DF8D008DBED4 /* DTSideMenuViewController.m in Sources */,
 				45A11CE0186515C00059CA05 /* DTAppDelegate.m in Sources */,
-				45A11CE9186515C00059CA05 /* DTViewController.m in Sources */,
+				45A11CE9186515C00059CA05 /* DTMainViewController.m in Sources */,
+				450A9FEF1865D3EB008DBED4 /* DTMenuViewController.m in Sources */,
 				45A11CDC186515C00059CA05 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +423,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Venues/Venues-Prefix.pch";
 				INFOPLIST_FILE = "Venues/Venues-Info.plist";
@@ -406,6 +440,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Venues/Venues-Prefix.pch";
 				INFOPLIST_FILE = "Venues/Venues-Info.plist";
@@ -475,6 +513,7 @@
 				45A11D03186515C10059CA05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45A11D04186515C10059CA05 /* Build configuration list for PBXNativeTarget "VenuesTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +522,7 @@
 				45A11D06186515C10059CA05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

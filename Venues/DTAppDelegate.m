@@ -1,19 +1,41 @@
-//
-//  DTAppDelegate.m
-//  Venues
-//
-//  Created by Giagkiozis Louloudis on 12/21/13.
-//  Copyright (c) 2013 Stonesoup. All rights reserved.
-//
 
 #import "DTAppDelegate.h"
+#import "DTMenuViewController.h"
+#import "DTMainViewController.h"
+#import "DTSideMenuViewController.h"
+
+@interface DTAppDelegate ()
+
+@property (nonatomic,strong) DTSideMenuViewController *sideMenuViewController;
+@property (nonatomic,strong) DTMenuViewController *menuViewController;
+@property (nonatomic,strong) DTMainViewController *mainViewController;
+
+@end
 
 @implementation DTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.menuViewController = [[DTMenuViewController alloc] initWithNibName:nil bundle:nil];
+    self.mainViewController = [[DTMainViewController alloc] initWithNibName:nil bundle:nil];
+    
+    self.sideMenuViewController = [[DTSideMenuViewController alloc] initWithMenuViewController:self.menuViewController mainViewController:[[UINavigationController alloc] initWithRootViewController:self.mainViewController]];
+    self.sideMenuViewController.shadowColor = [UIColor blackColor];
+    self.sideMenuViewController.edgeOffset = (UIOffset) { .horizontal = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? 18.0f : 0.0f };
+    self.sideMenuViewController.zoomScale = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? 0.5634f : 0.85f;
+    self.window.rootViewController = self.sideMenuViewController;
     return YES;
+}
+
+#pragma mark - DTSideMenuViewControllerDelegate
+
+- (UIStatusBarStyle)sideMenuViewController:(DTSideMenuViewController *)sideMenuViewController statusBarStyleForViewController:(UIViewController *)viewController
+{
+    if (viewController == self.menuViewController) {
+        return UIStatusBarStyleLightContent;
+    } else {
+        return UIStatusBarStyleDefault;
+    }
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
