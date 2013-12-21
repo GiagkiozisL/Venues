@@ -50,6 +50,7 @@
 		450A9FFA1865E18D008DBED4 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		450A9FFC1865E1BE008DBED4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		450A9FFE1865E1CC008DBED4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		450AA0011865FF66008DBED4 /* ControlVariables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ControlVariables.h; sourceTree = "<group>"; };
 		45A11CCC186515C00059CA05 /* Venues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Venues.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A11CCF186515C00059CA05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		45A11CD1186515C00059CA05 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -136,6 +137,7 @@
 		45A11CD5186515C00059CA05 /* Venues */ = {
 			isa = PBXGroup;
 			children = (
+				450AA0011865FF66008DBED4 /* ControlVariables.h */,
 				450A9FF81865E0BB008DBED4 /* ios_logo.png */,
 				45A11CDE186515C00059CA05 /* DTAppDelegate.h */,
 				45A11CDF186515C00059CA05 /* DTAppDelegate.m */,
