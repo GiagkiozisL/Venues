@@ -2,25 +2,27 @@
 #import "DTMainViewController.h"
 #import "DTSideMenuViewController.h"
 #import "ControlVariables.h"
-
-static NSString *const kTableViewCellIdentifier = @"com.exploretraditionalgreece";
+#import "TableCell.h"
 
 @interface DTMainViewController ()
-
+@property (nonatomic,strong) UITableView *tableView;
 @end
 
 @implementation DTMainViewController
 
+
+#pragma - UIViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"Main View Controller";
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.title = @"Main View";
     self.view.backgroundColor = [UIColor grayColor];
-    
-    UIBarButtonItem *openItem = [[UIBarButtonItem alloc] initWithTitle:@"Hamburger" style:UIBarButtonItemStylePlain target:self action:@selector(openButtonPressed)];
-    self.navigationItem.leftBarButtonItem = openItem;
-    
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kTableViewCellIdentifier];
+    UIBarButtonItem *menuItem = [[UIBarButtonItem alloc] initWithTitle:@"Hamburger" style:UIBarButtonItemStylePlain target:self action:@selector(openButtonPressed)];
+    self.navigationItem.leftBarButtonItem = menuItem;
+
 }
 
 - (void)openButtonPressed {
@@ -30,16 +32,32 @@ static NSString *const kTableViewCellIdentifier = @"com.exploretraditionalgreece
 #pragma mark - UITableViewDelegate & UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 40;
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *simpleTableIdentifier = @"TableCell";
+    TableCell *cell = (TableCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"TableCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
    
-    return [tableView dequeueReusableCellWithIdentifier:kTableViewCellIdentifier forIndexPath:indexPath];
+    cell.houseNameLabel.text = @"Pansion Something";
+    cell.areaLabel.text = @"village x";
+    cell.priceLabel.text = @"2436 $";
+    cell.houseImage.image = [UIImage imageNamed:@"karageorgou1"];
+    cell.shadowImage.image = [UIImage imageNamed:@"profile-stats-bg"];
+    //   cell.houseNameLabel.text = [tableData objectAtIndex:indexPath.row];
+    //    cell.houseImage.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+ //   cell.priceLabel.text = [prepTime objectAtIndex:indexPath.row];
+    
+    return cell;
 }
 
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    cell.textLabel.text = [NSString stringWithFormat:@"giouxouuuuu  %i",indexPath.row + 1];
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 300;
 }
 
 @end

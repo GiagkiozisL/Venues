@@ -1,6 +1,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DTMainViewController : UITableViewController
+@interface DTMainViewController : UITableViewController <UITableViewDelegate,UITableViewDataSource>
 
 @end

@@ -10,9 +10,14 @@
 		450A9FEF1865D3EB008DBED4 /* DTMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450A9FEE1865D3EB008DBED4 /* DTMenuViewController.m */; };
 		450A9FF11865DCEA008DBED4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450A9FF01865DCEA008DBED4 /* QuartzCore.framework */; };
 		450A9FF71865DF8D008DBED4 /* DTSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450A9FF61865DF8D008DBED4 /* DTSideMenuViewController.m */; };
-		450A9FF91865E0BB008DBED4 /* ios_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 450A9FF81865E0BB008DBED4 /* ios_logo.png */; };
 		450A9FFB1865E18D008DBED4 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 450A9FFA1865E18D008DBED4 /* libz.1.1.3.dylib */; };
 		450A9FFD1865E1BE008DBED4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450A9FFC1865E1BE008DBED4 /* SystemConfiguration.framework */; };
+		452369B4186658E600B8E877 /* TableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 452369B3186658E600B8E877 /* TableCell.m */; };
+		452369B718665A3500B8E877 /* profile-stats-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 452369B618665A3500B8E877 /* profile-stats-bg.png */; };
+		452369B918665A4000B8E877 /* home-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 452369B818665A4000B8E877 /* home-1.jpg */; };
+		456D375C1868754000AE949F /* galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 456D375B1868754000AE949F /* galaxy.png */; };
+		456D375E1868BADE00AE949F /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 456D375D1868BADE00AE949F /* TableCell.xib */; };
+		456D376018690BD800AE949F /* karageorgou1.png in Resources */ = {isa = PBXBuildFile; fileRef = 456D375F18690BD800AE949F /* karageorgou1.png */; };
 		45A11CD0186515C00059CA05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A11CCF186515C00059CA05 /* Foundation.framework */; };
 		45A11CD2186515C00059CA05 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A11CD1186515C00059CA05 /* CoreGraphics.framework */; };
 		45A11CD4186515C00059CA05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A11CD3186515C00059CA05 /* UIKit.framework */; };
@@ -46,11 +51,17 @@
 		450A9FF01865DCEA008DBED4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		450A9FF51865DF8D008DBED4 /* DTSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTSideMenuViewController.h; sourceTree = "<group>"; };
 		450A9FF61865DF8D008DBED4 /* DTSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTSideMenuViewController.m; sourceTree = "<group>"; };
-		450A9FF81865E0BB008DBED4 /* ios_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios_logo.png; sourceTree = "<group>"; };
 		450A9FFA1865E18D008DBED4 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		450A9FFC1865E1BE008DBED4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		450A9FFE1865E1CC008DBED4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		450AA0011865FF66008DBED4 /* ControlVariables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ControlVariables.h; sourceTree = "<group>"; };
+		452369B2186658E600B8E877 /* TableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableCell.h; path = Venues/TableCell.h; sourceTree = "<group>"; };
+		452369B3186658E600B8E877 /* TableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableCell.m; path = Venues/TableCell.m; sourceTree = "<group>"; };
+		452369B618665A3500B8E877 /* profile-stats-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-stats-bg.png"; sourceTree = "<group>"; };
+		452369B818665A4000B8E877 /* home-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "home-1.jpg"; sourceTree = "<group>"; };
+		456D375B1868754000AE949F /* galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = galaxy.png; sourceTree = "<group>"; };
+		456D375D1868BADE00AE949F /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
+		456D375F18690BD800AE949F /* karageorgou1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = karageorgou1.png; sourceTree = "<group>"; };
 		45A11CCC186515C00059CA05 /* Venues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Venues.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A11CCF186515C00059CA05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		45A11CD1186515C00059CA05 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,9 +111,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		452369B518665A2500B8E877 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				456D375F18690BD800AE949F /* karageorgou1.png */,
+				456D375B1868754000AE949F /* galaxy.png */,
+				452369B818665A4000B8E877 /* home-1.jpg */,
+				452369B618665A3500B8E877 /* profile-stats-bg.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		45A11CC3186515C00059CA05 = {
 			isa = PBXGroup;
 			children = (
+				452369B2186658E600B8E877 /* TableCell.h */,
+				452369B3186658E600B8E877 /* TableCell.m */,
+				456D375D1868BADE00AE949F /* TableCell.xib */,
+				452369B518665A2500B8E877 /* Images */,
 				45A11CD5186515C00059CA05 /* Venues */,
 				45A11CF7186515C10059CA05 /* VenuesTests */,
 				45A11CCE186515C00059CA05 /* Frameworks */,
@@ -138,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				450AA0011865FF66008DBED4 /* ControlVariables.h */,
-				450A9FF81865E0BB008DBED4 /* ios_logo.png */,
 				45A11CDE186515C00059CA05 /* DTAppDelegate.h */,
 				45A11CDF186515C00059CA05 /* DTAppDelegate.m */,
 				45A11CE1186515C00059CA05 /* Main_iPhone.storyboard */,
@@ -261,11 +286,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456D375C1868754000AE949F /* galaxy.png in Resources */,
 				45A11CE6186515C00059CA05 /* Main_iPad.storyboard in Resources */,
 				45A11CEB186515C00059CA05 /* Images.xcassets in Resources */,
+				452369B918665A4000B8E877 /* home-1.jpg in Resources */,
 				45A11CE3186515C00059CA05 /* Main_iPhone.storyboard in Resources */,
 				45A11CDA186515C00059CA05 /* InfoPlist.strings in Resources */,
-				450A9FF91865E0BB008DBED4 /* ios_logo.png in Resources */,
+				456D375E1868BADE00AE949F /* TableCell.xib in Resources */,
+				456D376018690BD800AE949F /* karageorgou1.png in Resources */,
+				452369B718665A3500B8E877 /* profile-stats-bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				450A9FF71865DF8D008DBED4 /* DTSideMenuViewController.m in Sources */,
+				452369B4186658E600B8E877 /* TableCell.m in Sources */,
 				45A11CE0186515C00059CA05 /* DTAppDelegate.m in Sources */,
 				45A11CE9186515C00059CA05 /* DTMainViewController.m in Sources */,
 				450A9FEF1865D3EB008DBED4 /* DTMenuViewController.m in Sources */,

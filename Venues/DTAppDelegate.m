@@ -21,7 +21,8 @@
     
     self.sideMenuViewController = [[DTSideMenuViewController alloc] initWithMenuViewController:self.menuViewController mainViewController:[[UINavigationController alloc] initWithRootViewController:self.mainViewController]];
     self.sideMenuViewController.shadowColor = [UIColor blackColor];
-    self.sideMenuViewController.edgeOffset = (UIOffset) { .horizontal = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? 18.0f : 0.0f };
+    self.sideMenuViewController.edgeOffset = (UIOffset) { .horizontal = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? 8.0f : 0.0f };
+    self.sideMenuViewController.edgeOffset = (UIOffset) { .vertical = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? -60.0f : 0.0f };
     self.sideMenuViewController.zoomScale = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? 0.5634f : 0.85f;
     self.window.rootViewController = self.sideMenuViewController;
     return YES;
@@ -29,15 +30,15 @@
 
 #pragma mark - DTSideMenuViewControllerDelegate
 
-- (UIStatusBarStyle)sideMenuViewController:(DTSideMenuViewController *)sideMenuViewController statusBarStyleForViewController:(UIViewController *)viewController
-{
-    if (viewController == self.menuViewController) {
-        return UIStatusBarStyleLightContent;
-    } else {
-        return UIStatusBarStyleDefault;
-    }
-}
-							
+//- (UIStatusBarStyle)sideMenuViewController:(DTSideMenuViewController *)sideMenuViewController statusBarStyleForViewController:(UIViewController *)viewController
+//{
+//    if (viewController == self.menuViewController) {
+//        return UIStatusBarStyleLightContent;
+//    } else {
+//        return UIStatusBarStyleDefault;
+//    }
+//}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
