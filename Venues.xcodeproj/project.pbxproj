@@ -33,6 +33,13 @@
 		45A11CF4186515C10059CA05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A11CD3186515C00059CA05 /* UIKit.framework */; };
 		45A11CFC186515C10059CA05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45A11CFA186515C10059CA05 /* InfoPlist.strings */; };
 		45A11CFE186515C10059CA05 /* VenuesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A11CFD186515C10059CA05 /* VenuesTests.m */; };
+		45E5529E186DAD4300B798CA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E5529D186DAD4300B798CA /* AudioToolbox.framework */; };
+		45E5529F186DAD5100B798CA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450A9FFE1865E1CC008DBED4 /* CFNetwork.framework */; };
+		45E552A1186DAD6100B798CA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E552A0186DAD6100B798CA /* CoreLocation.framework */; };
+		45E552A3186DAD7400B798CA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E552A2186DAD7400B798CA /* MobileCoreServices.framework */; };
+		45E552A5186DAD8D00B798CA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E552A4186DAD8D00B798CA /* Security.framework */; };
+		45E552A7186DAD9D00B798CA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E552A6186DAD9C00B798CA /* StoreKit.framework */; };
+		45E552AB186DB24F00B798CA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E552AA186DB24F00B798CA /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +89,12 @@
 		45A11CF9186515C10059CA05 /* VenuesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VenuesTests-Info.plist"; sourceTree = "<group>"; };
 		45A11CFB186515C10059CA05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45A11CFD186515C10059CA05 /* VenuesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VenuesTests.m; sourceTree = "<group>"; };
+		45E5529D186DAD4300B798CA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		45E552A0186DAD6100B798CA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		45E552A2186DAD7400B798CA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		45E552A4186DAD8D00B798CA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		45E552A6186DAD9C00B798CA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		45E552AA186DB24F00B798CA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +103,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				450A9FFD1865E1BE008DBED4 /* SystemConfiguration.framework in Frameworks */,
+				45E552A7186DAD9D00B798CA /* StoreKit.framework in Frameworks */,
+				45E552A5186DAD8D00B798CA /* Security.framework in Frameworks */,
+				45E552A3186DAD7400B798CA /* MobileCoreServices.framework in Frameworks */,
+				45E552A1186DAD6100B798CA /* CoreLocation.framework in Frameworks */,
+				45E5529F186DAD5100B798CA /* CFNetwork.framework in Frameworks */,
+				45E552AB186DB24F00B798CA /* Parse.framework in Frameworks */,
+				45E5529E186DAD4300B798CA /* AudioToolbox.framework in Frameworks */,
 				450A9FFB1865E18D008DBED4 /* libz.1.1.3.dylib in Frameworks */,
 				450A9FF11865DCEA008DBED4 /* QuartzCore.framework in Frameworks */,
 				45A11CD2186515C00059CA05 /* CoreGraphics.framework in Frameworks */,
@@ -148,6 +168,12 @@
 		45A11CCE186515C00059CA05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45E552AA186DB24F00B798CA /* Parse.framework */,
+				45E552A6186DAD9C00B798CA /* StoreKit.framework */,
+				45E552A4186DAD8D00B798CA /* Security.framework */,
+				45E552A2186DAD7400B798CA /* MobileCoreServices.framework */,
+				45E552A0186DAD6100B798CA /* CoreLocation.framework */,
+				45E5529D186DAD4300B798CA /* AudioToolbox.framework */,
 				450A9FFE1865E1CC008DBED4 /* CFNetwork.framework */,
 				450A9FFC1865E1BE008DBED4 /* SystemConfiguration.framework */,
 				450A9FFA1865E18D008DBED4 /* libz.1.1.3.dylib */,
@@ -458,6 +484,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/Louloudis/Desktop/desktop4recording/Venues,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Venues/Venues-Prefix.pch";
@@ -475,6 +502,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/Louloudis/Desktop/desktop4recording/Venues,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Venues/Venues-Prefix.pch";

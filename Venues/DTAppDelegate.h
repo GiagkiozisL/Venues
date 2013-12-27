@@ -1,5 +1,6 @@
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface DTAppDelegate : UIResponder <UIApplicationDelegate>
 

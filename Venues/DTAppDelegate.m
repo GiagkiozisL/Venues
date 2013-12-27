@@ -16,6 +16,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Parse setApplicationId:@"JX2BdnyXPIvbRZiW8DBFR0aoek9OQMd6JYDQ6lZJ"
+                  clientKey:@"pX35j0Gmy9w7v3dZ6vuLIseNM8UifulIC9n9XYox"];
+    
     self.menuViewController = [[DTMenuViewController alloc] initWithNibName:nil bundle:nil];
     self.mainViewController = [[DTMainViewController alloc] initWithNibName:nil bundle:nil];
     
