@@ -15,7 +15,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.title = @"Main View";
@@ -31,11 +30,23 @@
 
 #pragma mark - UITableViewDelegate & UITableViewDataSource
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+- (PFQuery *)queryForTable {
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Venues"];
+    if (self.objects.count == 0) {
+        query.cachePolicy = kPFCachePolicyCacheThenNetwork;
+    }
+    [query whereKey:@"name" notEqualTo:@"Something"];
+    return query;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.objects count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+            object:(PFObject *)object{
     static NSString *simpleTableIdentifier = @"TableCell";
     TableCell *cell = (TableCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     if (cell == nil)
@@ -44,9 +55,10 @@
         cell = [nib objectAtIndex:0];
     }
    
-    cell.houseNameLabel.text = @"Pansion Something";
-    cell.areaLabel.text = @"village x";
-    cell.priceLabel.text = @"2436 $";
+   cell.houseNameLabel.text = object [@"name"];
+    cell.areaLabel.text = object [@"area"];
+//    cell.priceLabel.text = object [@"price"];
+    cell.streetLabel.text = object [@"municipality"];
     cell.houseImage.image = [UIImage imageNamed:@"karageorgou1"];
     cell.shadowImage.image = [UIImage imageNamed:@"profile-stats-bg"];
     //   cell.houseNameLabel.text = [tableData objectAtIndex:indexPath.row];
