@@ -1,6 +1,7 @@
 
 #import "DTMainViewController.h"
 #import "DTSideMenuViewController.h"
+#import "DTMapViewController.h"
 #import "ControlVariables.h"
 #import "TableCell.h"
 
@@ -20,8 +21,14 @@
     self.title = @"Main View";
     self.view.backgroundColor = [UIColor grayColor];
     UIBarButtonItem *menuItem = [[UIBarButtonItem alloc] initWithTitle:@"Hamburger" style:UIBarButtonItemStylePlain target:self action:@selector(openButtonPressed)];
+    UIBarButtonItem *mapItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(openMap)];
     self.navigationItem.leftBarButtonItem = menuItem;
+    self.navigationItem.rightBarButtonItem = mapItem;
+}
 
+-(void)openMap {
+    DTMapViewController *mapController = [[DTMapViewController alloc]init];
+    [self.navigationController pushViewController:mapController animated:YES];
 }
 
 - (void)openButtonPressed {

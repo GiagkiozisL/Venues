@@ -15,6 +15,12 @@
 		452369B4186658E600B8E877 /* TableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 452369B3186658E600B8E877 /* TableCell.m */; };
 		452369B718665A3500B8E877 /* profile-stats-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 452369B618665A3500B8E877 /* profile-stats-bg.png */; };
 		452369B918665A4000B8E877 /* home-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 452369B818665A4000B8E877 /* home-1.jpg */; };
+		453B16E0188318210072E979 /* DTMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453B16DF188318210072E979 /* DTMapViewController.m */; };
+		453B16E218831FF80072E979 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 453B16E118831FF80072E979 /* background.png */; };
+		453B16E41883254F0072E979 /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = 453B16E31883254F0072E979 /* like.png */; };
+		453B16E7188325650072E979 /* unfavorite.png in Resources */ = {isa = PBXBuildFile; fileRef = 453B16E5188325650072E979 /* unfavorite.png */; };
+		453B16E8188325650072E979 /* unlike.png in Resources */ = {isa = PBXBuildFile; fileRef = 453B16E6188325650072E979 /* unlike.png */; };
+		453B16EB1883289D0072E979 /* DTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453B16EA1883289D0072E979 /* DTLoginViewController.m */; };
 		456D375C1868754000AE949F /* galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 456D375B1868754000AE949F /* galaxy.png */; };
 		456D375E1868BADE00AE949F /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 456D375D1868BADE00AE949F /* TableCell.xib */; };
 		456D376018690BD800AE949F /* karageorgou1.png in Resources */ = {isa = PBXBuildFile; fileRef = 456D375F18690BD800AE949F /* karageorgou1.png */; };
@@ -66,6 +72,14 @@
 		452369B3186658E600B8E877 /* TableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableCell.m; path = Venues/TableCell.m; sourceTree = "<group>"; };
 		452369B618665A3500B8E877 /* profile-stats-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-stats-bg.png"; sourceTree = "<group>"; };
 		452369B818665A4000B8E877 /* home-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "home-1.jpg"; sourceTree = "<group>"; };
+		453B16DE188318210072E979 /* DTMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMapViewController.h; sourceTree = "<group>"; };
+		453B16DF188318210072E979 /* DTMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMapViewController.m; sourceTree = "<group>"; };
+		453B16E118831FF80072E979 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		453B16E31883254F0072E979 /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like.png; sourceTree = "<group>"; };
+		453B16E5188325650072E979 /* unfavorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unfavorite.png; sourceTree = "<group>"; };
+		453B16E6188325650072E979 /* unlike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlike.png; sourceTree = "<group>"; };
+		453B16E91883289D0072E979 /* DTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTLoginViewController.h; sourceTree = "<group>"; };
+		453B16EA1883289D0072E979 /* DTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTLoginViewController.m; sourceTree = "<group>"; };
 		456D375B1868754000AE949F /* galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = galaxy.png; sourceTree = "<group>"; };
 		456D375D1868BADE00AE949F /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
 		456D375F18690BD800AE949F /* karageorgou1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = karageorgou1.png; sourceTree = "<group>"; };
@@ -134,6 +148,10 @@
 		452369B518665A2500B8E877 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				453B16E5188325650072E979 /* unfavorite.png */,
+				453B16E6188325650072E979 /* unlike.png */,
+				453B16E31883254F0072E979 /* like.png */,
+				453B16E118831FF80072E979 /* background.png */,
 				456D375F18690BD800AE949F /* karageorgou1.png */,
 				456D375B1868754000AE949F /* galaxy.png */,
 				452369B818665A4000B8E877 /* home-1.jpg */,
@@ -202,6 +220,10 @@
 				450A9FF61865DF8D008DBED4 /* DTSideMenuViewController.m */,
 				45A11CE7186515C00059CA05 /* DTMainViewController.h */,
 				45A11CE8186515C00059CA05 /* DTMainViewController.m */,
+				453B16DE188318210072E979 /* DTMapViewController.h */,
+				453B16DF188318210072E979 /* DTMapViewController.m */,
+				453B16E91883289D0072E979 /* DTLoginViewController.h */,
+				453B16EA1883289D0072E979 /* DTLoginViewController.m */,
 			);
 			path = Venues;
 			sourceTree = "<group>";
@@ -313,14 +335,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				456D375C1868754000AE949F /* galaxy.png in Resources */,
+				453B16E218831FF80072E979 /* background.png in Resources */,
 				45A11CE6186515C00059CA05 /* Main_iPad.storyboard in Resources */,
 				45A11CEB186515C00059CA05 /* Images.xcassets in Resources */,
+				453B16E8188325650072E979 /* unlike.png in Resources */,
+				453B16E7188325650072E979 /* unfavorite.png in Resources */,
 				452369B918665A4000B8E877 /* home-1.jpg in Resources */,
 				45A11CE3186515C00059CA05 /* Main_iPhone.storyboard in Resources */,
 				45A11CDA186515C00059CA05 /* InfoPlist.strings in Resources */,
 				456D375E1868BADE00AE949F /* TableCell.xib in Resources */,
 				456D376018690BD800AE949F /* karageorgou1.png in Resources */,
 				452369B718665A3500B8E877 /* profile-stats-bg.png in Resources */,
+				453B16E41883254F0072E979 /* like.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +366,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				450A9FF71865DF8D008DBED4 /* DTSideMenuViewController.m in Sources */,
+				453B16E0188318210072E979 /* DTMapViewController.m in Sources */,
+				453B16EB1883289D0072E979 /* DTLoginViewController.m in Sources */,
 				452369B4186658E600B8E877 /* TableCell.m in Sources */,
 				45A11CE0186515C00059CA05 /* DTAppDelegate.m in Sources */,
 				45A11CE9186515C00059CA05 /* DTMainViewController.m in Sources */,

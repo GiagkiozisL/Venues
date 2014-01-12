@@ -11,6 +11,7 @@
 @synthesize houseImage = _houseImage;
 @synthesize shadowView = _shadowView;
 @synthesize shadowImage = _shadowImage;
+@synthesize favoriteBtn = _favoriteBtn;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
