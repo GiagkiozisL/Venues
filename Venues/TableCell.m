@@ -13,6 +13,7 @@
 @synthesize shadowImage = _shadowImage;
 @synthesize favoriteBtn = _favoriteBtn;
 
+bool isFav ;
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
@@ -46,5 +47,29 @@
 
     }
 }
+
+- (void)highlightButton:(UIButton *)favoriteBtn {
+    
+    
+    if(isFav == false){
+        [favoriteBtn setImage:[UIImage imageNamed:@"star-y.png"] forState:UIControlStateNormal];
+       isFav = true;
+        [favoriteBtn setHighlighted:YES];
+    }
+    else
+    {
+        isFav = true;
+        [favoriteBtn setImage:[UIImage imageNamed:@"star-g.png"] forState:UIControlStateNormal];
+        [favoriteBtn setHighlighted:NO];
+       
+    }
+    
+   
+}
+
+- (IBAction)onTouchup:(UIButton *)sender {
+  [self performSelector:@selector(highlightButton:) withObject:sender afterDelay:0.0];
+}
+
 
 @end

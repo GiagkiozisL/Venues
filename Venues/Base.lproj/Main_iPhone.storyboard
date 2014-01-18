@@ -19,6 +19,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="UNi-Iz-kd9"/>
+                    <connections>
+                        <segue destination="rn8-PM-Kfx" kind="push" id="YK2-Qa-ZWu"/>
+                        <segue destination="03X-xy-OOj" kind="push" id="WUB-ga-V2H"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfe-7o-fFv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -27,7 +31,7 @@
         <!--Login View Controller-->
         <scene sceneID="A6J-fP-F0n">
             <objects>
-                <viewController id="03X-xy-OOj" customClass="DTLoginViewController" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="03X-xy-OOj" customClass="DTLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7ix-fS-q28"/>
                         <viewControllerLayoutGuide type="bottom" id="vP5-33-wQf"/>
@@ -36,7 +40,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1hp-7O-Nja">
+                            <view contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="DTLoginViewController" translatesAutoresizingMaskIntoConstraints="NO" id="1hp-7O-Nja">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -53,10 +57,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="aVU-0a-JkN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CZb-ci-TBX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="456" y="-676"/>
+            <point key="canvasLocation" x="428" y="4"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="mzB-Sy-pVo">
@@ -77,6 +82,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="lkx-e4-mig"/>
                     <connections>
                         <outlet property="mapView" destination="h4y-aD-Fyn" id="rO8-zb-RR1"/>
                     </connections>

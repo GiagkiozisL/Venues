@@ -12,6 +12,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *shadowImage;
 @property (strong, nonatomic) IBOutlet UIButton *favoriteBtn;
 
+
 @property (nonatomic, assign)  BOOL laidOut;
 
 @end

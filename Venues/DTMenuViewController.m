@@ -64,20 +64,26 @@
 }
 
 -(void)menuItem4Pressed {
-   
+    NSString * storyboardName = @"Main_iPhone";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"DTLoginViewController"];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 -(void)menuItem3Pressed {
-    [self.sideMenuViewController closeMenuAnimated:YES completion:nil];
+    UINavigationController *controller = [[UINavigationController alloc] initWithRootViewController:[DTMapViewController new]];
+    [self.sideMenuViewController setMainViewController:controller animated:YES closeMenu:YES];
 }
 
 -(void)menuItem2Pressed {
-    UINavigationController *controller = [[UINavigationController alloc] initWithRootViewController:[DTMainViewController new]];
+    UINavigationController *controller = [[UINavigationController alloc] initWithRootViewController:[DTLoginViewController new]];
     [self.sideMenuViewController setMainViewController:controller animated:YES closeMenu:YES];
 }
 
 -(void)menuItem1Pressed {
-    [self.sideMenuViewController closeMenuAnimated:YES completion:nil];
+    DTLoginViewController *secondViewController =
+    [self.storyboard instantiateViewControllerWithIdentifier:@"secondViewController"];
+    [self.navigationController pushViewController:secondViewController animated:YES];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {

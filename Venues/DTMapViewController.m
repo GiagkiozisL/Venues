@@ -14,6 +14,13 @@ MKMapView *mapView;
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.mapView setShowsUserLocation:YES];
+    self.title = @"Map View";
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    self.mapView = [[MKMapView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:self.mapView];
 }
 
 @end

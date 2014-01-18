@@ -7,6 +7,7 @@
 
 @interface DTMainViewController ()
 @property (nonatomic,strong) UITableView *tableView;
+@property (nonatomic, strong) UIProgressView *progressBar;
 @end
 
 @implementation DTMainViewController
@@ -20,7 +21,7 @@
     self.tableView.dataSource = self;
     self.title = @"Main View";
     self.view.backgroundColor = [UIColor grayColor];
-    UIBarButtonItem *menuItem = [[UIBarButtonItem alloc] initWithTitle:@"Hamburger" style:UIBarButtonItemStylePlain target:self action:@selector(openButtonPressed)];
+    UIBarButtonItem *menuItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"burgerIcon.png"] style:UIBarButtonItemStylePlain target:self action:@selector(openButtonPressed)];
     UIBarButtonItem *mapItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(openMap)];
     self.navigationItem.leftBarButtonItem = menuItem;
     self.navigationItem.rightBarButtonItem = mapItem;
@@ -66,12 +67,21 @@
     cell.areaLabel.text = object [@"area"];
 //    cell.priceLabel.text = object [@"price"];
     cell.streetLabel.text = object [@"municipality"];
-    cell.houseImage.image = [UIImage imageNamed:@"karageorgou1"];
+   cell.houseImage.image = [UIImage imageNamed:@"karageorgou1"];
     cell.shadowImage.image = [UIImage imageNamed:@"profile-stats-bg"];
     //   cell.houseNameLabel.text = [tableData objectAtIndex:indexPath.row];
     //    cell.houseImage.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
  //   cell.priceLabel.text = [prepTime objectAtIndex:indexPath.row];
-    
+//    PFObject *userPhoto = [PFObject objectWithClassName:@"Venues"];
+//    userPhoto[@"image"] = @"My trip to Hawaii!";
+//    userPhoto[@"imageFile"] = imageFile;
+//    [userPhoto saveInBackground];
+//    PFFile *userImageFile = anotherPhoto[@"image"];
+//    [userImageFile getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error) {
+//        if (!error) {
+//            UIImage *image = [UIImage imageWithData:imageData];
+//        }
+//    }];
     return cell;
 }
 
